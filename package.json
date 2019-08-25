@@ -1,0 +1,51 @@
+{
+  "name": "@said-m/common",
+  "version": "0.0.1",
+  "description": "Kinda submodule, 'cos mono-repos r 2 cool 4 me",
+  "main": "dist/helpers/index.js",
+  "types": "dist/helpers/index.d.ts",
+  "repository": "https://github.com/said-m/common",
+  "author": "Said Magomedov <saids.inbox@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "utils",
+    "template",
+    "TypeScript"
+  ],
+  "files": [
+    "tslint.json",
+    "tsconfig.json",
+    "tsconfig.build.json",
+    "jest.config.json",
+    "dist",
+    ".vscode"
+  ],
+  "dependencies": {
+    "lodash": "^4.17.15"
+  },
+  "scripts": {
+    "build": "tsc -p ./tsconfig.build.json",
+    "validate": "tsc --noEmit",
+    "lint": "tslint -p tsconfig.json",
+    "test": "jest --config jest.config.json",
+    "test-coverage": "yarn test --coverage",
+    "prepack": "yarn build",
+    "postpack": "rm -rf ./dist"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint && yarn test"
+    }
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@types/lodash": "^4.14.137",
+    "@types/node": "^12.7.2",
+    "husky": "^3.0.4",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.19.0",
+    "typescript": "^3.5.3"
+  }
+}
