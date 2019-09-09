@@ -48,7 +48,10 @@
     "no-string-throw": true,
     "encoding": true,
     "no-floating-promises": true,
-    "no-implicit-dependencies": true,
+    "no-implicit-dependencies": [
+      true,
+      "dev"
+    ],
     "align": [
       true,
       "elements",
