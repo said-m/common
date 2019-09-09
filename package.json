@@ -32,11 +32,6 @@
     "prepack": "yarn build",
     "postpack": "rm -rf ./dist"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn lint && yarn test"
-    }
-  },
   "devDependencies": {
     "@types/jest": "^24.0.18",
     "@types/lodash": "^4.14.137",
