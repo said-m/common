@@ -13,7 +13,11 @@
     "interface-over-type-literal": true,
     "space-before-function-paren": [
       true,
-      "never"
+      {
+        "anonymous": "always",
+        "named": "never",
+        "asyncArrow": "always"
+      }
     ],
     "whitespace": [
       true,
@@ -44,7 +48,10 @@
     "no-string-throw": true,
     "encoding": true,
     "no-floating-promises": true,
-    "no-implicit-dependencies": true,
+    "no-implicit-dependencies": [
+      true,
+      "dev"
+    ],
     "align": [
       true,
       "elements",

@@ -12,7 +12,7 @@
       "cwd": "${workspaceRoot}",
       "args": [
         "--i",
-        "--config", "jest.config.js"
+        "--config", "jest.config.json"
       ]
     },
     {
@@ -23,7 +23,7 @@
       "cwd": "${workspaceRoot}",
       "args": [
         "--i",
-        "-c", "jest.config.js",
+        "--config", "jest.config.json",
         "--findRelatedTests", "${relativeFile}",
         "--colors",
       ]
