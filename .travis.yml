@@ -15,7 +15,10 @@ cache:
     - 'node_modules'
 
 script:
-  - yarn test-ci
+  # # В норм проектах пользовать это:
+  # - yarn test-ci
+  # # вместо этого:
+  - yarn test
 
 deploy:
   provider: npm
