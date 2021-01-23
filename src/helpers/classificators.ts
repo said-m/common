@@ -1,4 +1,5 @@
-import { isNumber, isString } from 'lodash';
+import isNumber from 'lodash.isnumber';
+import isString from 'lodash.isstring';
 import { getKeys } from '.';
 import { ObjectInterface, TextInterface } from '../interfaces';
 

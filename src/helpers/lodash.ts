@@ -1,4 +1,4 @@
-import { isArray as lodashIsArray, isPlainObject as lodashIsPlainObject } from 'lodash';
+import lodashIsPlainObject from 'lodash.isplainobject';
 import { ObjectInterface } from '../interfaces';
 
 /**
@@ -11,5 +11,5 @@ export function isPlainObject(value: unknown): value is ObjectInterface {
 
 /** Lodash в текущей версии возвращает any[], хотя появился unknown */
 export function isArray(value: unknown): value is Array<unknown> {
-  return lodashIsArray(value);
+  return Array.isArray(value);
 }
