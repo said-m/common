@@ -1,6 +1,6 @@
 {
   "name": "@said-m/common",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Kinda submodule, 'cos mono-repos r 2 cool 4 me",
   "main": "dist/helpers/index.js",
   "types": "dist/helpers/index.d.ts",
